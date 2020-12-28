@@ -14,6 +14,7 @@ html, body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    border-style: solid;
 }
 
 .mainContent p {
@@ -70,10 +71,12 @@ html, body {
     width: 10em;
     border-radius: 50%;
 }
-
 .projectImages{
+    width: 100%;
+}
+.projectImage{
     padding: 2%;
-    width:  40%;
+    width: 40%;
     align-content: baseline;
     height: auto;
 }
@@ -83,22 +86,27 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #87CDFF;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     transform: scale(0);
     transition: .3s ease;
   }
 
+  
 .container {
+    padding: 2%;
+    width: 40%;
+    align-content: baseline;
+    height: auto;
     position: relative;
-    width: 50%;
 }
 
-.projectImages:hover.overlay {
+
+.container:hover .overlay {
     transform: scale(1);
-}
+  }
 
 .text {
     color: white;
@@ -109,3 +117,18 @@ html, body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.arrows {
+    position: absolute;
+    bottom: 0px;
+}
+
+.fas fa-arrow-down {
+    color: black;
+}
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:#033dfc; }
+a:focus { text-decoration: none; color:#033dfc; }
+a:hover, a:active { text-decoration: none; color:#033dfc; }
+
