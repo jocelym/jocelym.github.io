@@ -1,133 +1,399 @@
 @charset "UTF-8";
 
-html, body {
-    background-color:lightblue;
-    font-family: 'Chelsea Market';
-    margin:0;
 
-}
 
-.mainContent {
-    display:flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
+@media only screen and (min-width: 992px) {
+    html, body {
+        background-color:lightblue;
+        font-family: 'Chelsea Market';
+        margin:0;
+    
+    }
+    
+    .mainContent {
+        display:flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mainContent p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainContent h1 {
+        padding: 0.6em;
+        margin: 0;
+    }
+    
+    .projects {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        background-color: #BBBEFE;
+        padding: 5%;
+    
+    }
+    .projects h1 {
+        text-align: center;
+    }
+    
+    .socials {
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: black;
+    }
+    
+    .grid-container {
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      background-color: #9EA3F5;
+      padding: 10px;
+      align-content: baseline;
+    
+    }
+    
+    .buttons {
+        color:black;
+        margin: 0.7em;
+        font-size: 2em;
+    }
+    
+    .image {
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+    }
+    .projectImages{
+        width: 100%;
+    }
+    .projectImage{
+        padding: 2%;
+        width: 40%;
+        align-content: baseline;
+        height: auto;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #87CDFF;
+        overflow: hidden;
+        width: 99%;
+        height: 99%;
+        transform: scale(0);
+        transition: .3s ease;
+      }
+    
+    
+    .container:hover .overlay {
+        transform: scale(1);
+      }
+    
+    
+    .arrows {
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .fas fa-arrow-down {
+        color: black;
+    }
+    
+    a:visited { text-decoration: none; color:black; }
+    a:hover { text-decoration: none; color:#033dfc; }
+    a:focus { text-decoration: none; color:#033dfc; }
+    a:hover, a:active { text-decoration: none; color:#033dfc; }
 
-.mainContent p {
-    padding: 0;
-    margin: 0;
-}
-
-.mainContent h1 {
-    padding: 0.6em;
-    margin: 0;
-}
-
-.projects {
-    display: flex;
-    align-content: flex-start;
-    flex-direction: column;
-    background-color: #BBBEFE;
-    padding: 5%;
-
-}
-.projects h1 {
-    text-align: center;
-}
-
-.socials {
-    display:flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    color: black;
-}
-
-.grid-container {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #9EA3F5;
-  padding: 10px;
-  align-content: baseline;
-
-}
-
-.buttons {
-    color:black;
-    margin: 0.7em;
-    font-size: 2em;
-}
-
-.image {
-    height: 10em;
-    width: 10em;
-    border-radius: 50%;
-}
-.projectImages{
-    width: 100%;
-}
-.projectImage{
-    padding: 2%;
-    width: 40%;
-    align-content: baseline;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #87CDFF;
-    overflow: hidden;
-    width: 99%;
-    height: 99%;
-    transform: scale(0);
-    transition: .3s ease;
-  }
-
-  
-.container {
+    .container {
     padding: 2%;
     width: 40%;
     align-content: baseline;
     height: auto;
     position: relative;
+    }
+
+    .text {
+        color: white;
+        font-size: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    html, body {
+        background-color:lightblue;
+        font-family: 'Chelsea Market';
+        margin:0;
+    
+    }
+    
+    .mainContent {
+        display:flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mainContent p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainContent h1 {
+        padding: 0.6em;
+        margin: 0;
+    }
+    
+    .projects {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        background-color: #BBBEFE;
+        padding: 5%;
+    
+    }
+    .projects h1 {
+        text-align: center;
+    }
+    
+    .socials {
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: black;
+    }
+    
+    .grid-container {
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      background-color: #9EA3F5;
+      padding: 10px;
+      align-content: baseline;
+    
+    }
+    
+    .buttons {
+        color:black;
+        margin: 0.7em;
+        font-size: 2em;
+    }
+    
+    .image {
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+    }
+    .projectImages{
+        width: 100%;
+    }
+    .projectImage{
+        padding: 2%;
+        width: 40%;
+        align-content: baseline;
+        height: auto;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #87CDFF;
+        overflow: hidden;
+        width: 99%;
+        height: 99%;
+        transform: scale(0);
+        transition: .3s ease;
+      }
+    
+    
+    .container:hover .overlay {
+        transform: scale(1);
+      }
+    
+    
+    .arrows {
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .fas fa-arrow-down {
+        color: black;
+    }
+    
+    a:visited { text-decoration: none; color:black; }
+    a:hover { text-decoration: none; color:#033dfc; }
+    a:focus { text-decoration: none; color:#033dfc; }
+    a:hover, a:active { text-decoration: none; color:#033dfc; }
+
+    .container {
+        padding: 2%;
+        width: 40%;
+        align-content: baseline;
+        height: auto;
+        position: relative;
+    }
+
+    .text {
+        color: white;
+        font-size: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 2%;
+        width: 100%;
+        align-content: baseline;
+        height: auto;
+        position: relative;
+    }
+
+    .text {
+        color: white;
+        font-size: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    html, body {
+        background-color:lightblue;
+        font-family: 'Chelsea Market';
+        margin:0;
+    
+    }
+    
+    .mainContent {
+        display:flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mainContent p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainContent h1 {
+        padding: 0.6em;
+        margin: 0;
+    }
+    
+    .projects {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        background-color: #BBBEFE;
+        padding: 5%;
+    
+    }
+    .projects h1 {
+        text-align: center;
+    }
+    
+    .socials {
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: black;
+    }
+    
+    .grid-container {
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      background-color: #9EA3F5;
+      padding: 10px;
+      align-content: baseline;
+    
+    }
+    
+    .buttons {
+        color:black;
+        margin: 0.7em;
+        font-size: 2em;
+    }
+    
+    .image {
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+    }
+    .projectImages{
+        width: 100%;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #87CDFF;
+        overflow: hidden;
+        width: 99%;
+        height: 99%;
+        transform: scale(0);
+        transition: .3s ease;
+      }
+    
+    
+    .container:hover .overlay {
+        transform: scale(1);
+      }
+    
+    
+    .arrows {
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .fas fa-arrow-down {
+        color: black;
+    }
+    
+    a:visited { text-decoration: none; color:black; }
+    a:hover { text-decoration: none; color:#033dfc; }
+    a:focus { text-decoration: none; color:#033dfc; }
+    a:hover, a:active { text-decoration: none; color:#033dfc; }
 }
 
 
-.container:hover .overlay {
-    transform: scale(1);
-  }
-
-.text {
-    color: white;
-    font-size: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.arrows {
-    position: absolute;
-    bottom: 0px;
-}
-
-.fas fa-arrow-down {
-    color: black;
-}
-
-a:visited { text-decoration: none; color:black; }
-a:hover { text-decoration: none; color:#033dfc; }
-a:focus { text-decoration: none; color:#033dfc; }
-a:hover, a:active { text-decoration: none; color:#033dfc; }
 
