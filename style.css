@@ -22,6 +22,8 @@
     .mainContent p {
         padding: 0;
         margin: 0;
+        text-align: center;
+
     }
     
     .mainContent h1 {
@@ -156,11 +158,16 @@
     .mainContent p {
         padding: 0;
         margin: 0;
+        text-align: center;
+
     }
     
     .mainContent h1 {
         padding: 0.6em;
         margin: 0;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
     }
     
     .projects {
@@ -239,6 +246,7 @@
     .arrows {
         position: absolute;
         bottom: 0px;
+        font-size: 50px;
     }
     
     .fas fa-arrow-down {
@@ -301,11 +309,13 @@
         height: 100vh;
         align-items: center;
         justify-content: center;
+        align-self: center;
     }
     
     .mainContent p {
         padding: 0;
         margin: 0;
+        text-align: center;
     }
     
     .mainContent h1 {
